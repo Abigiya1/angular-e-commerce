@@ -1,0 +1,76 @@
+
+<form (ngSubmit)="addCustomer()"  #f="ngForm">
+    <div class="wrapper bg-white mt-sm-5">
+      <h4 class="pb-4 border-bottom">Add Customer</h4>
+    
+      
+      <div class="py-2">
+          <div class="row py-2">
+           
+              <div class="col-md-6"> <label for="name">Customer Name: </label> 
+                <input type="text" class="form-control" id ="name" name="name" #name="ngModel" [(ngModel)]="newCustomer.name" name="exampleInputName" [placeholder]="selectedCustomer.name" required minlength="3">
+               
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors?.['required']">
+                        Name is required.
+                    </div>
+                    <div *ngIf="name.errors?.['minlength']">
+                        Name must be at least 4 characters long.
+                    </div>
+                </div>
+  
+  
+              <div class="col-md-6"> <label for="price">Gender: </label> 
+                <input type="text" class="form-control" id="gender" name="gender" #name="ngModel" [(ngModel)]="newCustomer.gender" name="exampleInputGender" [placeholder]="selectedCustomer.gender" required>
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors?.['required']">
+                        Gender is required.
+                    </div>
+                    
+                </div>
+          </div>
+          <div class="row py-2">
+              <div class="col-md-6"> <label for="description">Number of Membership Years: </label>
+                <input type="number" class="form-control" id="year" name="year" #name="ngModel" [(ngModel)]="newCustomer.memberYear" name="exampleInputMemberYear" [placeholder]="selectedCustomer.memberYear" required>
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors?.['required']">
+                        Membership year is required.
+                    </div>
+                    
+               
+            </div>
+                <div class="col-md-6"> <label for="description">Email: </label>
+                    <input type="email" class="form-control" id="email" name="email" #name="ngModel" [(ngModel)]="newCustomer.email" name="exampleInputEmail" [placeholder]="selectedCustomer.email" required>
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                        <div *ngIf="name.errors?.['required']">
+                            Email is required.
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-6"> <label for="price">Profile URL: </label> 
+                    <input type="text" class="form-control" id="url" name="url" #name="ngModel" [(ngModel)]="newCustomer.image" name="exampleInputUrl" placeholder="assets\" required>
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                        <div *ngIf="name.errors?.['required']">
+                            Image URL is required.
+                        </div>
+                        
+                    </div>
+              </div>
+          
+          <div class="py-3 pb-4 border-bottom"> <button type="submit" class="btn btn-primary mr-3" [disabled]="!f.valid" >Add Customer</button> 
+            
+        </div>
+          
+          
+      
+  </div>
+  </div>
+</div>
+  </div>
+  </div>
+  </div>
+  </form>
+  
+  

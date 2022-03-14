@@ -1,0 +1,11 @@
+.footer{
+    background-color: rgb(10, 10, 10);
+    height: 200px;
+    width: 1500px;
+    float: left;
+}
+.info{
+    color: rgb(161, 141, 48);
+    margin-bottom: 25px;
+    margin-left: 300px;
+}

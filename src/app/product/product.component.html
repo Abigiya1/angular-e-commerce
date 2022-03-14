@@ -1,0 +1,19 @@
+<div>
+  <button (click)="addProduct()" class="btn btn-warning add">Add Product</button>
+</div>
+<div class="productBi">
+  <div class="card product" *ngFor="let product of productList" style="width: 18rem;">
+    <div class="image"><img class="card-img-top img" [src]="product.imageUrl" alt="Card image cap"></div>
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <h6 class="card-text">{{product.price}} Birr</h6>
+      <p class="card-text" *ngIf="product.price < 10" style="color: red;">$ {{product.price}} (*On Discount)</p>
+      <p class="card-text">{{product.description}}</p>
+      <div class="edit">
+      <button (click)="onViewDetail(product.id)" class="btn btn-success ">Edit Product</button>
+    </div>
+    </div>
+  </div>
+  </div>
+ 
+  <br>

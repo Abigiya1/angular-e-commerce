@@ -1,0 +1,16 @@
+<button class="btn btn-warning text-uppercase add" (click)="addCustomer()">Add Customer</button> 
+  <div class="row g-2 profile">
+    <div *ngFor="let customer of customerList" class="col-md-3 customer" >
+        <div class="card p-2 py-3 text-center">
+            <div class="img mb-2"> <img [src]="customer.image" width="70" class="rounded-circle"> </div>
+            <h5 class="mb-0">{{customer.name}}</h5>
+            <small>{{customer.gender}}</small>
+            <small>{{customer.email}}</small>
+            <small *ngIf="customer.memberYear >= 2" style="color: #FFBF00;">{{customer.memberYear}} years </small>
+            <small *ngIf="customer.memberYear < 2" style="color: #000000;">{{customer.memberYear}} year</small>
+            <div class="ratings mt-2"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="mt-4 apointment"> <button class="btn btn-success text-uppercase" (click)="onViewDetail(customer.id)">Edit</button> </div>
+        </div>
+    </div>
+  </div>
+  

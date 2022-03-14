@@ -1,0 +1,55 @@
+.card{
+    padding: 10px;
+    margin: 30px 10px 10px 50px;
+    float: left;
+    width: 33.33%;
+    
+}
+
+.img{
+    height: 300px;
+    transition: all 0.5s;
+}
+
+
+.image{
+    height: 16em;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+
+.flake{
+    margin-right: 10em;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #FFBF00;
+    
+}
+
+.navli{
+    margin-right: 15px;
+}
+
+.product:hover{
+    box-shadow: 4px 4px 4px #d1cece;
+    
+}
+
+.product{
+    display: flex;
+}
+.product:hover img{
+    height: 16em;
+
+    /* width: 350px;
+    height: 300px; */
+}
+.add{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.edit{
+    float: inline-end;
+}

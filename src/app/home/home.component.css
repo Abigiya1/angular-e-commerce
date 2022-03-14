@@ -1,0 +1,28 @@
+.body{
+    background-color: #d3bd82;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 20em;
+}
+.flake{
+    color: #fff;
+    font-size: 5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.detail{
+    color: #ffff99;
+    font-size:3em;
+    font-family: papyrus;
+}
+.bttn{
+    height: 3em;
+    color: #3f3434;
+    border-color: #ffbb00;
+}
+.add{
+    color: #ffbb00
+}
