@@ -113,3 +113,60 @@ select:focus {
         line-height: 18px
     }
 }
+body {
+    background: #E2E5EE;
+
+}
+
+.close:focus {
+    outline: none
+}
+
+.container.justify-content-center {
+    margin-top: 500px;
+    margin-left: 500px;
+}
+
+.modal-header {
+    border: none
+}
+
+.modal-footer {
+    border: none
+}
+
+.btn-danger {
+    background: #DD2750;
+    border: 1px solid #C43352
+}
+
+.btn-light {
+    border: 1px solid #E7E7E9
+}
+
+.btn:focus {
+    box-shadow: none
+}
+.modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: 50%;
+    size: 400px;
+    height: 10em;
+    width: 30em;
+}
+.modal{
+    size: 40em;
+}
+h6{
+    /* font-size: 300px; */
+    margin-top: 6px;
+    margin-left: 4px;
+    padding-top: 6px;
+}
+.btncd{
+    height: 35px;
+    width: 70px;
+}

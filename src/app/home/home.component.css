@@ -1,28 +1,39 @@
-.body{
-    background-color: #d3bd82;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    padding: 20em;
-}
-.flake{
-    color: #fff;
-    font-size: 5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
 }
 
-
-
-.detail{
-    color: #ffff99;
-    font-size:3em;
-    font-family: papyrus;
+.navbar.scrolled {
+    background: rgb(34, 31, 31);
+    transition: background 500ms
 }
-.bttn{
-    height: 3em;
-    color: #3f3434;
-    border-color: #ffbb00;
+
+#mainNavbar {
+    padding-left: 50px;
+    padding-top: 100px
 }
-.add{
-    color: #ffbb00
+
+.navbar-dark .navbar-brand {
+    font-family: 'Source Serif Pro', serif
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Source Serif Pro', serif
+}
+
+.display-4 {
+    font-family: 'Source Serif Pro', serif
+}
+
+.lead {
+    font-family: 'Source Serif Pro', serif
+}
+.login{
+    float:right;
+    margin: 20px;
 }

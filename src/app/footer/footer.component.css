@@ -2,6 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
 }
 footer {
     background-color: #292c2f;
@@ -14,7 +15,8 @@ footer {
     margin-top: auto;
     margin-bottom: 0 !important;
     color: #fff;
-    position: fixed !important;
+    position: absolute !important;
+    
 }
 
 .footer-navigation h3 {

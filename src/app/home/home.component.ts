@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
     this.customerList.push(this.selectedCustomer);
     this.router.navigateByUrl('Customer');
   }
-  login(){
+  loginPage(){
     this.router.navigateByUrl('login');
 
   }

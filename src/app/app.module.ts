@@ -16,6 +16,7 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductService } from './product/product.service';
 import { LoginComponent } from './login/login.component';
+import { NavbarCustomerComponent } from './navbar-customer/navbar-customer.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { LoginComponent } from './login/login.component';
     AddProductComponent,
     AddCustomerComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarCustomerComponent
   ],
   imports: [
     BrowserModule,

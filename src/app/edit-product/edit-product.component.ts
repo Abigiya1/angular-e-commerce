@@ -42,6 +42,7 @@ export class EditProductComponent implements OnInit {
   }
 
   deleteProduct(){
+    
     this.route.params.subscribe(
       param => {
         this.productList.splice(this.productList.findIndex(function(val){
